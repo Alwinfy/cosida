@@ -1,0 +1,39 @@
+<!DOCtype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="A little spiderbot in your browser." />
+    <meta name="author" content="Alwinfy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="console.js"></script>
+    <script src="vm.js"></script>
+    <script src="code.js"></script>
+    <script src="loader.js"></script>
+    <title>COSIDA</title>
+  </head>
+  <body>
+    <center>
+      <main>
+        <header>
+          <h1>COSIDA mk. I</h1>
+          <h2>running on Spindle v0.3</h2>
+          <hr />
+        </header>
+        <div id="repl"></div>
+        <details>
+          <summary>Peek at my guts?</summary>
+          <p>COSIDA's code is almost entirely written in assembly language for a custom VM! That VM, Spindle, is in turn implemented in pure JavaScript.</p>
+          <p>Underlying files can be found here:</p>
+          <ul>
+            <li><a href="vm.js">Spindle (VM runtime)</a>, which runs the code in</li>
+            <li><a href="code.js">COSIDA (Bytecode source)</a>, hooked up to console using the</li>
+            <li><a href="loader.js">"OS" services</a>.</li>
+          </ul>
+          <p>All files here licensed under <a href="LICENSE">MIT.</a></p>
+        </details>
+      </main>
+    </center>
+  </body>
+</html>

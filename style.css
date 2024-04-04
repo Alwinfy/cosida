@@ -1,0 +1,41 @@
+body {
+	background-color: lightblue;
+}
+h1, h2 {
+	margin-bottom: .1em;
+	font-family: monospace;
+}
+
+main {
+	max-width: 90vw;
+}
+h2 {
+	margin-top: .3em;
+	font-weight: normal;
+}
+#repl {
+	background-color: #101020; color: white;
+	font-family: Monospace;
+	text-align: left;
+	padding: 1em;
+	white-space: pre-wrap;
+	max-width: 60em;
+	height: 32em;
+	overflow-y: scroll;
+}
+[contenteditable=true]:empty:before {
+	content: "\200b";
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(to right,
+		rgba(0, 0, 0, 0), black 20%, black 80%, rgba(0, 0, 0, 0));
+}
+details > p, ul {
+	text-align: left;
+}
+details {
+	display: inline-block;
+}
